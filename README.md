@@ -14,7 +14,8 @@ The motivation for this project is to aid users in performing routine self-scree
 
 This project utilizes AWS cloud services.
 
-![medhacks_architecture drawio](https://github.com/user-attachments/assets/9ae77b04-7684-412f-9de3-06ceb5059e62)
+![medhacks_architecture drawio](https://github.com/user-attachments/assets/0d7ec465-74ff-4b0b-a9fa-a0f8f07c4eed)
+
 
 
 ## Program Flow
