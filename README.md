@@ -4,7 +4,7 @@
 
 This project is my submission for the MedHacks 2024 Hackathon.
 
-A recent [survey](https://preventcancer.org/article/skin-deep-understanding-skin-cancer-in-darker-tones/#:~:text=The%20Prevent%20Cancer%20Foundation's%202024,had%20a%20skin%20cancer%20check.) by the Prevent Cancer Foundation found that more than half of American adults are not up to date on their annual skin cancer screenings.  This is concerning given that skin cancer is one of the most common types of cancer in the US, with more than 3.3 million Americans affected by non-melanoma skin cancers. 
+A recent survey by the [Prevent Cancer Foundation](https://preventcancer.org/article/skin-deep-understanding-skin-cancer-in-darker-tones/#:~:text=The%20Prevent%20Cancer%20Foundation's%202024,had%20a%20skin%20cancer%20check.) found that more than half of American adults are not up to date on their annual skin cancer screenings.  This is concerning given that skin cancer is one of the most common types of cancer in the US, with more than 3.3 million Americans affected by non-melanoma skin cancers. 
 
 It is not uncommon to notice small lesions or unusual freckles pop up on our bodies, but many of us put off seeing a dermatologist.  
 
@@ -14,7 +14,8 @@ The motivation for this project is to aid users in performing routine self-scree
 
 This project utilizes AWS cloud services.
 
-![medhacks_architecture drawio](https://github.com/user-attachments/assets/7eab6476-a8d4-4b8a-a256-9a3ec552074d)
+![medhacks_architecture drawio](https://github.com/user-attachments/assets/9ae77b04-7684-412f-9de3-06ceb5059e62)
+
 
 ## Program Flow
 
