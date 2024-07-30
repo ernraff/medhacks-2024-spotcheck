@@ -1,4 +1,4 @@
-# MedHacks 2024 Melanoma Detection
+# MedHacks 2024 Skin Cancer Detection
 
 ## Overview
 
