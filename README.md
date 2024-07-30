@@ -20,12 +20,12 @@ This project utilizes AWS cloud services.
 ## Program Flow
 
 1.  Client is authenticated using AWS Cognito
-2.  Client uploads photo of skin lesion to S3 bucket
-3.  User makes API call to GET method
-4.  Lambda proxy triggers AWS Sagemaker
-5.  Jupyter notebook preprocesses image from S3 bucket and passes it to pre-trained deep learning model
-6.  Model classifies image as BENIGN or MALIGNANT
-7.  Lambda proxy returns recommendation for further evaluation to user based on image classification.
+2.  Client uploads photo of skin lesion to S3 bucket, which triggers Lambda Function
+4.  Lambda function triggers Sagemaker notebook instance
+5.  Sagemaker notebook pre-processes S3 image and passes it to pre-trained neural network
+6.  Model classifies image as BENIGN or MALIGNANT and classification is added to S3 object as metadata
+7.  Client calls API GET method
+8.  Lambda proxy gets classification label from object metadata and returns recommendation to the user.
     - If the image is classified as malignant: "Our analysis suggests that this lesion may require further examination. We strongly recommend consulting a dermatologist for a professional evaluation."
     - If the image is classified as benign:  "Our analysis suggests that this lesion is likely benign. However, we recommend consulting a dermatologist to confirm and ensure your health and safety."
 
