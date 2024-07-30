@@ -4,7 +4,7 @@
 
 This project is my submission for the MedHacks 2024 Hackathon.
 
-A recent [survey]([url](https://preventcancer.org/article/skin-deep-understanding-skin-cancer-in-darker-tones/#:~:text=The%20Prevent%20Cancer%20Foundation's%202024,had%20a%20skin%20cancer%20check.) by the Prevent Cancer Foundation found that more than half of American adults are not up to date on their annual skin cancer screenings.  This is concerning given that skin cancer is one of the most common types of cancer in the US, with more than 3.3 million Americans affected by non-melanoma skin cancers. 
+A recent [survey](https://preventcancer.org/article/skin-deep-understanding-skin-cancer-in-darker-tones/#:~:text=The%20Prevent%20Cancer%20Foundation's%202024,had%20a%20skin%20cancer%20check.) by the Prevent Cancer Foundation found that more than half of American adults are not up to date on their annual skin cancer screenings.  This is concerning given that skin cancer is one of the most common types of cancer in the US, with more than 3.3 million Americans affected by non-melanoma skin cancers. 
 
 It is not uncommon to notice small lesions or unusual freckles pop up, but many of us put of seeing a dermatologist.  
 
