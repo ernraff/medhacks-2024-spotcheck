@@ -6,7 +6,7 @@ This project is my submission for the MedHacks 2024 Hackathon.
 
 A recent [survey](https://preventcancer.org/article/skin-deep-understanding-skin-cancer-in-darker-tones/#:~:text=The%20Prevent%20Cancer%20Foundation's%202024,had%20a%20skin%20cancer%20check.) by the Prevent Cancer Foundation found that more than half of American adults are not up to date on their annual skin cancer screenings.  This is concerning given that skin cancer is one of the most common types of cancer in the US, with more than 3.3 million Americans affected by non-melanoma skin cancers. 
 
-It is not uncommon to notice small lesions or unusual freckles pop up, but many of us put of seeing a dermatologist.  
+It is not uncommon to notice small lesions or unusual freckles pop up on our bodies, but many of us put off seeing a dermatologist.  
 
 The motivation for this project is to aid users in performing routine self-screenings by evaluating skin lesions and recommending further evaluation by a medical professional if indicated.
 
