@@ -25,8 +25,8 @@ This project utilizes AWS cloud services.
 5.  Jupyter notebook preprocesses image from S3 bucket and passes it to pre-trained deep learning model
 6.  Model classifies image as BENIGN or MALIGNANT
 7.  Lambda proxy returns recommendation for further evaluation to user based on image classification.
-  - If the image is classified as benign: Our analysis suggests that this lesion may require further examination. We strongly recommend consulting a dermatologist for a professional evaluation.
-  - If the image is classified as benign:  Our analysis suggests that this lesion is likely benign. However, we recommend consulting a dermatologist to confirm and ensure your health and safety.
+    - If the image is classified as benign: Our analysis suggests that this lesion may require further examination. We strongly recommend consulting a dermatologist for a professional evaluation.
+    - If the image is classified as benign:  Our analysis suggests that this lesion is likely benign. However, we recommend consulting a dermatologist to confirm and ensure your health and safety.
 
 ## Disclaimer 
 
