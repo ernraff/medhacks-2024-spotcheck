@@ -34,9 +34,9 @@ The results provided by this app are based on a deep learning model and are for 
 
 ## Limitations
 1.  Model accuracy:
-   - False negatives could result in users not seeking medical attention in a timely manner
-   - False positives could result in unnecessary anxiety for the user
+       - False negatives could result in users not seeking medical attention in a timely manner
+       - False positives could result in unnecessary anxiety for the user
 2.  Data bias:
-  - Training data for AI models comes from a healthcare system that is inherantly biased.
-  - Models may be less effective in detecting malignant lesions in patients of color than in their white counterparts.
+      - Training data for AI models comes from a healthcare system that is inherantly biased.
+      - Models may be less effective in detecting malignant lesions in patients of color than in their white counterparts.
 
