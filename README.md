@@ -14,19 +14,16 @@ The motivation for this project is to aid users in performing routine self-scree
 
 This project utilizes AWS cloud services.
 
-![medhacks_architecture drawio](https://github.com/user-attachments/assets/0d7ec465-74ff-4b0b-a9fa-a0f8f07c4eed)
-
-
+![medhacks_architecture drawio](https://github.com/user-attachments/assets/b2ee5cdc-fa68-4e22-b0e4-596a64d2bdac)
 
 ## Program Flow
 
 1.  Client is authenticated using AWS Cognito
 2.  Client uploads photo of skin lesion to S3 bucket, which triggers Lambda Function
-4.  Lambda function triggers Sagemaker notebook instance
-5.  Sagemaker notebook pre-processes S3 image and passes it to pre-trained neural network
-6.  Model classifies image as BENIGN or MALIGNANT and classification is added to S3 object as metadata
-7.  Client calls API GET method
-8.  Lambda proxy gets classification label from object metadata and returns recommendation to the user.
+3.  Lambda function passes image to pre-trained neural network and classifies image as BENIGN or MALIGNANT
+4.  Lambda function adds classification to S3 object metadata.
+5.  Client calls API GET method
+6.  Lambda proxy gets classification label from object metadata and returns recommendation to the user.
     - If the image is classified as malignant: "Our analysis suggests that this lesion may require further examination. We strongly recommend consulting a dermatologist for a professional evaluation."
     - If the image is classified as benign:  "Our analysis suggests that this lesion is likely benign. However, we recommend consulting a dermatologist to confirm and ensure your health and safety."
 
