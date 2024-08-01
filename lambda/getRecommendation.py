@@ -13,8 +13,8 @@ def getRecommendation(fileName):
         response = client.head_object(Bucket = bucket,  Key = fileName)
         classification = response["ResponseMetadata"]["HTTPHeaders"].get("x-amz-meta-classification", "")
         
-        print("Show me HTTPHeaders: ", response["ResponseMetadata"]["HTTPHeaders"])
-        print("show me response metadata: ", response["ResponseMetadata"])
+        # print("Show me HTTPHeaders: ", response["ResponseMetadata"]["HTTPHeaders"])
+        # print("show me response metadata: ", response["ResponseMetadata"])
         
         if classification: 
             print("classification: ", classification)
@@ -44,3 +44,4 @@ def lambda_handler(event, context):
         'body': recommendation
         
     }
+
