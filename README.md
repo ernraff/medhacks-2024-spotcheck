@@ -12,7 +12,7 @@ The motivation for this project is to aid users in performing routine self-scree
 
 ## Architecture
 
-This project utilizes AWS cloud services.  A pre-trained deep learning model for skin cancer detection from Hugging Face was used for image classification.
+This project utilizes AWS cloud services.  A pre-trained deep learning model for skin cancer detection from [Hugging Face](https://huggingface.co/Anwarkh1/Skin_Cancer-Image_Classification) was used for image classification.
 
 ![medhacks_architecture drawio](https://github.com/user-attachments/assets/9cfe2565-6b82-4413-bae1-7dc6dfc0cd69)
 
