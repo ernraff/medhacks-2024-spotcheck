@@ -1,4 +1,4 @@
-# MedHacks 2024 Skin Cancer Self Screener
+# SpotCheck Skin Cancer Self Screener
 
 ## Overview
 
@@ -12,18 +12,17 @@ The motivation for this project is to aid users in performing routine self-scree
 
 ## Architecture
 
-This project utilizes AWS cloud services.
+This project utilizes AWS cloud services.  A pre-trained deep learning model for skin cancer detection from Hugging Face was used for image classification.
 
-![medhacks_architecture drawio](https://github.com/user-attachments/assets/b2ee5cdc-fa68-4e22-b0e4-596a64d2bdac)
+
 
 ## Program Flow
 
-1.  Client is authenticated using AWS Cognito
-2.  Client uploads photo of skin lesion to S3 bucket, which triggers Lambda Function
-3.  Lambda function passes image to pre-trained neural network and classifies image as BENIGN or MALIGNANT
-4.  Lambda function adds classification to S3 object metadata.
-5.  Client calls API GET method
-6.  Lambda proxy gets classification label from object metadata and returns recommendation to the user.
+1.  Client uploads photo of skin lesion to S3 bucket, which triggers classifierLambda
+2.  classifierLambda passes image to pre-trained model deployed on Sagemaker and classifies image as BENIGN or MALIGNANT
+3.  Lambda function adds classification to S3 object's metadata.
+4.  Client calls API GET method(/detect/{fileName})
+5.  Lambda proxy (getRecommentdation) gets classification label from object metadata and returns recommendation to the user.
     - If the image is classified as malignant: "Our analysis suggests that this lesion may require further examination. We strongly recommend consulting a dermatologist for a professional evaluation."
     - If the image is classified as benign:  "Our analysis suggests that this lesion is likely benign. However, we recommend consulting a dermatologist to confirm and ensure your health and safety."
 
