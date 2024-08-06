@@ -21,7 +21,7 @@ This project utilizes AWS cloud services.  A pre-trained deep learning model for
 1.  Client uploads photo of skin lesion to S3 bucket, which triggers classifierLambda
 2.  classifierLambda passes image to pre-trained model deployed on Sagemaker and classifies image as BENIGN or MALIGNANT
 3.  Lambda function adds classification to S3 object's metadata.
-4.  Client calls API GET method(/detect/{fileName})
+4.  Client calls API GET method endpoint ( /detect/{fileName} )
 5.  Lambda proxy (getRecommentdation) gets classification label from object metadata and returns recommendation to the user.
     - If the image is classified as malignant: "Our analysis suggests that this lesion may require further examination. We strongly recommend consulting a dermatologist for a professional evaluation."
     - If the image is classified as benign:  "Our analysis suggests that this lesion is likely benign. However, we recommend consulting a dermatologist to confirm and ensure your health and safety."
@@ -43,4 +43,6 @@ The results provided by this app are based on a deep learning model and are for 
 Due to time constraints, I have focused on the backend of this application for submission.  Next steps will involve building a reactive UI.  
 
 For the sake of expediency I used a pre-trained model for image classification.  Further training and testing could be done in order to optimize model performance and ensure that recommendations are as accurate as possible.
+
+Authentication with and IdP such as AWS Cognito should be added to the application.
 
