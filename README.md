@@ -1,4 +1,4 @@
-# SpotCheck Skin Cancer Self Screener
+# SpotCheck Skin Cancer Self-Screener
 
 ## Overview
 
