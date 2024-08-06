@@ -42,5 +42,5 @@ The results provided by this app are based on a deep learning model and are for 
 
 Due to time constraints, I have focused on the backend of this application for submission.  Next steps will involve building a reactive UI.  
 
-For the sake of expediency I used a pre-trained model for image classifications.  Further training and testing could be done in order to optimize model performance and ensure that recommendations are as accurate as possible.
+For the sake of expediency I used a pre-trained model for image classification.  Further training and testing could be done in order to optimize model performance and ensure that recommendations are as accurate as possible.
 
